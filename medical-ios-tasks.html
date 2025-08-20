@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical iOS Tasks - Timeline View</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="dashboard-container">
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="sidebar-item active">
+          <i class="fas fa-th-large"></i>
+          <span>Projects</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-plane"></i>
+          <span>Vacations</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-users"></i>
+          <span>Employees</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-comment"></i>
+          <span>Messenger</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-folder"></i>
+          <span>Info Portal</span>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Top Header -->
+        <div class="header">
+          <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" class="search-input" />
+          </div>
+          <div class="header-right">
+            <div class="notification-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="user-info">
+              <img
+                class="user-avatar-img"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Evan Yates"
+              />
+              <span>Evan Yates</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="add-project-btn">
+              <i class="fas fa-plus"></i>
+              Add Project
+            </button>
+            <div class="filter-icon">
+              <i class="fas fa-filter"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="content-wrapper-tasks">
+          <!-- Projects Section -->
+          <div class="projects-section-tasks">
+            <h1 class="section-title">Current Projects</h1>
+            <div class="projects-list-tasks">
+              <div class="project-item-tasks active" data-project="medical-ios">
+                <div class="project-id">PN0001245</div>
+                <div class="project-title">Medical App (iOS native)</div>
+                <div class="project-link">
+                  <a href="#" class="view-details">View details ></a>
+                </div>
+              </div>
+              <div class="project-item-tasks" data-project="food-delivery">
+                <div class="project-id">PN000745</div>
+                <div class="project-title">Food Delivery Service</div>
+              </div>
+              <div class="project-item-tasks" data-project="fortune-website">
+                <div class="project-id">PN000746</div>
+                <div class="project-title">Fortune website</div>
+              </div>
+              <div class="project-item-tasks" data-project="planner-app">
+                <div class="project-id">PN000747</div>
+                <div class="project-title">Planner App</div>
+              </div>
+              <div class="project-item-tasks" data-project="time-tracker">
+                <div class="project-id">PN000748</div>
+                <div class="project-title">Time tracker - personal account</div>
+              </div>
+              <div class="project-item-tasks" data-project="internal-project">
+                <div class="project-id">PN000749</div>
+                <div class="project-title">Internal Project</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasks Timeline Section -->
+          <div class="tasks-timeline-section">
+            <h1 class="section-title">Tasks</h1>
+
+            <!-- Tasks Header -->
+            <div class="tasks-header">
+              <div class="tasks-left">
+                <h3 class="all-tasks-title">All Tasks</h3>
+                <span class="tasks-count">34 issues</span>
+              </div>
+              <div class="timeline-header">
+                <h3 class="timeline-title">First month (September)</h3>
+                <div class="timeline-days">
+                  <span class="day-number">1</span>
+                  <span class="day-number">2</span>
+                  <span class="day-number">3</span>
+                  <span class="day-number">4</span>
+                  <span class="day-number">5</span>
+                  <span class="day-number">6</span>
+                  <span class="day-number">7</span>
+                  <span class="day-number">8</span>
+                  <span class="day-number">9</span>
+                  <span class="day-number">10</span>
+                  <span class="day-number">11</span>
+                  <span class="day-number">12</span>
+                  <span class="day-number">13</span>
+                  <span class="day-number">14</span>
+                  <span class="day-number">15</span>
+                  <span class="day-number">16</span>
+                  <span class="day-number">17</span>
+                  <span class="day-number">18</span>
+                  <span class="day-number">19</span>
+                  <span class="day-number">20</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tasks Timeline Grid -->
+            <div class="tasks-timeline-grid">
+              <div class="task-row">
+                <div class="task-name">Research</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="2-3"></div>
+                  <div class="timeline-cell active" data-days="2-3"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">Mind Map</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="5-6"></div>
+                  <div class="timeline-cell active" data-days="5-6"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">UX Login + Registration</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">
+                  UI Login + Registration [other screens]
+                </div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">
+                  Research reports [presentation for client]
+                </div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">Moodboard</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell active" data-days="8-10"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">UI Kit</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell active" data-days="14-16"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+
+              <div class="task-row">
+                <div class="task-name">Testing</div>
+                <div class="timeline-cells">
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell active" data-days="10-12"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                  <div class="timeline-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+</html>

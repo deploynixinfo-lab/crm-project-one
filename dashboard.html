@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-bg">
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-logo">CRM</div>
+    <ul class="sidebar-menu">
+      <li class="active"><a href="dashboard.html"><span class="icon">🏠</span>Dashboard</a></li>
+      <li><a href="projects.html"><span class="icon">📁</span>Projects</a></li>
+      <li><a href="#"><span class="icon">📅</span>Calendar</a></li>
+      <li><a href="#"><span class="icon">👨‍💼 </span>Leads</a></li>
+      <li><a href="#"><span class="icon">👨‍💼</span>Employees</a></li>
+      <li><a href="#"><span class="icon">💬</span>Messenger</a></li>
+      <li><a href="#"><span class="icon">ℹ️</span>Info Portal</a></li>
+    </ul>
+    <div class="sidebar-logout"><a href="#"><span class="icon">🚪</span>Logout</a></div>
+  </aside>
+  <main class="main-content">
+    <!-- <div class="dashboard-glass glass-effect"> -->
+      <div class="top-bar">
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="top-bar-right">
+          <button class="icon-btn notification-btn" aria-label="Notifications">
+            <svg width="24" height="24" fill="none" stroke="#6c63a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </button>
+          <div class="profile-dropdown">
+            <span class="profile-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/32.jpg')"></span>
+            <span class="profile-name">Evan Yates</span>
+            <button class="icon-btn dropdown-btn" aria-label="Profile dropdown">
+              <svg width="18" height="18" fill="none" stroke="#6c63a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-row-sub">
+        <div class="dashboard-heading">
+          <div class="welcome-msg">Welcome back, Evan!</div>
+          <h1 class="dashboard-title">Dashboard</h1>
+        </div>
+        <div class="calendar-glass glass-effect">
+          <span class="calendar-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="5" width="18" height="16" rx="4" fill="#ecebfa"/>
+              <rect x="7" y="2" width="2" height="4" rx="1" fill="#b1a8d9"/>
+              <rect x="15" y="2" width="2" height="4" rx="1" fill="#b1a8d9"/>
+              <rect x="3" y="9" width="18" height="2" fill="#d6c9f3"/>
+              <circle cx="8" cy="14" r="1.2" fill="#4B8CFF"/>
+              <circle cx="12" cy="14" r="1.2" fill="#b1a8d9"/>
+              <circle cx="16" cy="14" r="1.2" fill="#b1a8d9"/>
+            </svg>
+          </span>
+          <span class="calendar-range">Nov 16, 2020 - Dec 16, 2020</span>
+        </div>
+      </div>
+      <div class="dashboard-main-grid">
+        <!-- Workload Section -->
+        <section class="workload card">
+          <div class="section-header">
+            <span>Workload</span>
+            <a href="#">View all</a>
+          </div>
+          <div class="workload-cards">
+            <!-- 8 employee cards -->
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/1.jpg')"></div>
+              <div class="employee-name">Shawn Stone</div>
+              <div class="employee-role">UI/UX Designer</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/2.jpg')"></div>
+              <div class="employee-name">Randy Delgado</div>
+              <div class="employee-role">UI/UX Designer</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/women/1.jpg')"></div>
+              <div class="employee-name">Emily Tyler</div>
+              <div class="employee-role">Copywriter</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/3.jpg')"></div>
+              <div class="employee-name">Louis Castro</div>
+              <div class="employee-role">Copywriter</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/4.jpg')"></div>
+              <div class="employee-name">Blake Silva</div>
+              <div class="employee-role">iOS Developer</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/5.jpg')"></div>
+              <div class="employee-name">Joel Phillips</div>
+              <div class="employee-role">UI/UX Designer</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/6.jpg')"></div>
+              <div class="employee-name">Wayne Marsh</div>
+              <div class="employee-role">Copywriter</div>
+              <div class="employee-tag">Review</div>
+            </div>
+            <div class="employee-card">
+              <div class="employee-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/7.jpg')"></div>
+              <div class="employee-name">Oscar Holloway</div>
+              <div class="employee-role">UI/UX Designer</div>
+              <div class="employee-tag">Review</div>
+            </div>
+          </div>
+        </section>
+        <!-- Nearest Events Section -->
+        <section class="events card">
+          <div class="section-header">
+            <span>Nearest Events</span>
+            <a href="#">View all</a>
+          </div>
+          <div class="event-list">
+            <div class="event-item up">
+              <div class="event-title">Presentation of the new department</div>
+              <div class="event-meta">Today | 5:00 PM</div>
+              <div class="event-arrow up"><svg width="16" height="16"><path d="M8 12V4M8 4l-4 4m4-4l4 4" stroke="#4B8CFF" stroke-width="2" fill="none"/></svg></div>
+              <div class="event-duration">4h</div>
+            </div>
+            <div class="event-item down">
+              <div class="event-title">Anna's Birthday</div>
+              <div class="event-meta">Today | 6:00 PM</div>
+              <div class="event-arrow down"><svg width="16" height="16"><path d="M8 4v8M8 12l-4-4m4 4l4-4" stroke="#4B8CFF" stroke-width="2" fill="none"/></svg></div>
+              <div class="event-duration">4h</div>
+            </div>
+            <div class="event-item down">
+              <div class="event-title">Ray's Birthday</div>
+              <div class="event-meta">Tomorrow | 2:00 PM</div>
+              <div class="event-arrow down"><svg width="16" height="16"><path d="M8 4v8M8 12l-4-4m4 4l4-4" stroke="#4B8CFF" stroke-width="2" fill="none"/></svg></div>
+              <div class="event-duration">4h</div>
+            </div>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects card">
+          <div class="section-header">
+            <span>Projects</span>
+            <a href="#">View all</a>
+          </div>
+          <div class="project-list">
+            <div class="project-item">
+              <div class="project-icon medical"></div>
+              <div class="project-info">
+                <div class="project-title">Medical App (iOS native)</div>
+                <div class="project-meta">Created Sep 12, 2020 <span class="project-priority medium">Medium</span></div>
+              </div>
+              <div class="project-data">
+                <div>All tasks <span>34</span></div>
+                <div>Active tasks <span>13</span></div>
+                <div class="assignees">
+                  <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                  <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                  <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-icon food"></div>
+              <div class="project-info">
+                <div class="project-title">Food Delivery Service</div>
+                <div class="project-meta">Created Sep 10, 2020 <span class="project-priority medium">Medium</span></div>
+              </div>
+              <div class="project-data">
+                <div>All tasks <span>50</span></div>
+                <div>Active tasks <span>24</span></div>
+                <div class="assignees">
+                  <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+                  <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-icon food"></div>
+              <div class="project-info">
+                <div class="project-title">Food Delivery Service</div>
+                <div class="project-meta">Created May 28, 2020 <span class="project-priority low">Low</span></div>
+              </div>
+              <div class="project-data">
+                <div>All tasks <span>23</span></div>
+                <div>Active tasks <span>20</span></div>
+                <div class="assignees">
+                  <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
+                  <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Activity Stream Section -->
+        <section class="activity card">
+          <div class="section-header">
+            <span>Activity Stream</span>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <span class="activity-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/7.jpg')"></span>
+              <div class="activity-info">
+                <div class="activity-name">Oscar Holloway</div>
+                <div class="activity-role">UI/UX Designer</div>
+                <div class="activity-action">Updated the status of Mind Map task to In Progress</div>
+                <div class="activity-action">Attached files to the task</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <span class="activity-avatar" style="background-image:url('https://randomuser.me/api/portraits/women/1.jpg')"></span>
+              <div class="activity-info">
+                <div class="activity-name">Emily Tyler</div>
+                <div class="activity-role">Copywriter</div>
+                <div class="activity-action">Updated the status of Mind Map task to In Progress</div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="activity-viewmore">View more</a>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>

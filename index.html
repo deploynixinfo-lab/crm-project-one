@@ -1,0 +1,282 @@
+<!--
+  Open index.html in browser. No build required.
+  This is a pixel-perfect CRM dashboard front page. All layout, icons, and cards match the provided mockup.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infolexus Solutions CRM Dashboard</title>
+    <!-- Google Fonts: Playfair Display (serif), Inter (sans-serif) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-root">
+      <!-- Sidebar Navigation -->
+      <nav class="sidebar" aria-label="Main navigation">
+        <!-- 4-dots SVG icon -->
+        <br /><br />
+        <ul class="sidebar-icons">
+          <li>
+            <a
+              class="sidebar-icon"
+              aria-label="Dashboard"
+              href="dashboard.html"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="7" height="7" rx="2" />
+                <rect x="14" y="3" width="7" height="7" rx="2" />
+                <rect x="14" y="14" width="7" height="7" rx="2" />
+                <rect x="3" y="14" width="7" height="7" rx="2" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <button class="sidebar-icon" aria-label="Analytics">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 20V10M12 20V4M20 20V14" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar-icon" aria-label="Properties">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M16 3v4M8 3v4" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar-icon" aria-label="Sales">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18M12 3v18" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar-icon" aria-label="Cost">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8M12 8v8" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar-icon" aria-label="Settings">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#6c63a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <div class="sidebar-avatar">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="User avatar"
+            class="avatar-img"
+          />
+        </div>
+      </nav>
+      <!-- Main Content Area -->
+      <div class="main-area">
+        <!-- Header Row -->
+        <header class="top-header">
+          <div class="header-titles">
+            <h1 class="greeting">Hello, Infolexus Solutions</h1>
+            <p class="subtitle">
+              Explore information and activity about your property
+            </p>
+          </div>
+          <div class="header-actions">
+            <form class="search-form" role="search">
+              <input
+                type="search"
+                placeholder="Search Anything..."
+                aria-label="Search"
+              />
+              <button type="submit" class="search-btn" aria-label="Search">
+                <!-- search SVG -->
+              </button>
+            </form>
+            <button class="header-icon" aria-label="Messages">
+              <!-- message SVG -->
+              <span class="badge-dot"></span>
+            </button>
+            <button class="header-icon" aria-label="Notifications">
+              <!-- bell SVG -->
+            </button>
+            <button class="header-icon" aria-label="Profile">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Profile"
+                class="avatar-img small"
+              />
+            </button>
+          </div>
+        </header>
+        <!-- Stats Cards Row -->
+        <section class="stats-row">
+          <div class="stat-card">
+            <div class="stat-icon stat-property"><!-- property SVG --></div>
+            <div class="stat-details">
+              <div class="stat-title">Total Property</div>
+              <div class="stat-value">1,500</div>
+              <div class="stat-badges">
+                <span class="badge badge-green">+20%</span>
+                <span class="stat-muted">Last month total 1,050</span>
+              </div>
+            </div>
+            <button class="stat-menu" aria-label="More">
+              <!-- ellipsis SVG -->
+            </button>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon stat-sales"><!-- sales SVG --></div>
+            <div class="stat-details">
+              <div class="stat-title">Number of Sales</div>
+              <div class="stat-value">320</div>
+              <div class="stat-badges">
+                <span class="badge badge-red">-20%</span>
+                <span class="stat-muted">Last month total 950</span>
+              </div>
+            </div>
+            <button class="stat-menu" aria-label="More">
+              <!-- ellipsis SVG -->
+            </button>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon stat-total"><!-- money SVG --></div>
+            <div class="stat-details">
+              <div class="stat-title">Total Sales</div>
+              <div class="stat-value">$150K</div>
+              <div class="stat-badges">
+                <span class="badge badge-green">+20%</span>
+                <span class="stat-muted">Last month total 1,500</span>
+              </div>
+            </div>
+            <button class="stat-menu" aria-label="More">
+              <!-- ellipsis SVG -->
+            </button>
+          </div>
+        </section>
+        <!-- Main Grid: Charts and Lists -->
+        <main class="main-grid third-row-equal">
+          <section class="card report-sales">
+            <div class="card-header">
+              <h2>Report Sales</h2>
+              <div class="dropdown" tabindex="0" aria-haspopup="listbox">
+                Weekday
+                <!-- chevron SVG -->
+              </div>
+            </div>
+            <canvas
+              id="barChart"
+              width="600"
+              height="220"
+              aria-label="Report Sales Bar Chart"
+            ></canvas>
+          </section>
+          <section class="card cost-breakdown">
+            <div class="card-header">
+              <h2>Cost Breakdown</h2>
+              <a href="#" class="see-details">See Details</a>
+            </div>
+            <div class="donut-chart-wrap">
+              <canvas
+                id="donutChart"
+                width="220"
+                height="220"
+                aria-label="Cost Breakdown Donut Chart"
+              ></canvas>
+              <div class="donut-center"><span>$4,750</span></div>
+            </div>
+            <ul class="donut-legend">
+              <li>
+                <span class="legend-dot legend-maintenance"></span>Maintenance
+              </li>
+              <li><span class="legend-dot legend-repair"></span>Repair</li>
+              <li><span class="legend-dot legend-taxes"></span>Taxes</li>
+              <li><span class="legend-dot legend-saving"></span>Saving</li>
+            </ul>
+          </section>
+          <section class="card last-transactions">
+            <div class="card-header">
+              <h2>Last Transactions</h2>
+              <a href="#" class="see-all">See All</a>
+            </div>
+            <ul class="transactions-list">
+              <!-- JS renders items here -->
+            </ul>
+          </section>
+          <section class="card maintenance-requests">
+            <div class="card-header">
+              <h2>Maintenance Requests</h2>
+              <a href="#" class="see-all">See All</a>
+            </div>
+            <ul class="requests-list">
+              <!-- JS renders items here -->
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

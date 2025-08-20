@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical App Project Dashboard</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="dashboard-container">
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="sidebar-item active">
+          <i class="fas fa-th-large"></i>
+          <span>Projects</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-plane"></i>
+          <span>Leads</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-users"></i>
+          <span>Employees</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-comment"></i>
+          <span>Messenger</span>
+        </div>
+        <div class="sidebar-item">
+          <i class="fas fa-folder"></i>
+          <span>Info Portal</span>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Top Header -->
+        <div class="header">
+          <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" class="search-input" />
+          </div>
+          <div class="header-right">
+            <div class="notification-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="user-info">
+              <img
+                class="user-avatar-img"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Evan Yates"
+              />
+              <span>Evan Yates</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="add-project-btn">
+              <i class="fas fa-plus"></i>
+              Add Project
+            </button>
+            <div class="filter-icon">
+              <i class="fas fa-filter"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="content-wrapper">
+          <!-- Projects Section -->
+          <div class="projects-section">
+            <h1 class="section-title">Projects</h1>
+            <div class="current-projects">
+              <div class="projects-header">
+                <span>Current Projects</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="projects-list">
+                <div class="project-item active" data-project="medical-ios">
+                  <div class="project-id">PN0001245</div>
+                  <div class="project-title">Medical App (iOS native)</div>
+                  <div class="project-link">
+                    <a href="medical-ios-tasks.html" class="view-details"
+                      >View details ></a
+                    >
+                  </div>
+                </div>
+                <div class="project-item" data-project="food-delivery">
+                  <div class="project-id">PN000745</div>
+                  <div class="project-title">Food Delivery Service</div>
+                  <div class="project-link" style="display: none">
+                    <a href="#" class="view-details">View details ></a>
+                  </div>
+                </div>
+                <div class="project-item" data-project="fortune-website">
+                  <div class="project-id">PN000746</div>
+                  <div class="project-title">Fortune website</div>
+                  <div class="project-link" style="display: none">
+                    <a href="#" class="view-details">View details ></a>
+                  </div>
+                </div>
+                <div class="project-item" data-project="planner-app">
+                  <div class="project-id">PN000747</div>
+                  <div class="project-title">Planner App</div>
+                  <div class="project-link" style="display: none">
+                    <a href="#" class="view-details">View details ></a>
+                  </div>
+                </div>
+                <div class="project-item" data-project="time-tracker">
+                  <div class="project-id">PN000748</div>
+                  <div class="project-title">
+                    Time tracker - personal account
+                  </div>
+                  <div class="project-link" style="display: none">
+                    <a href="#" class="view-details">View details ></a>
+                  </div>
+                </div>
+                <div class="project-item" data-project="internal-project">
+                  <div class="project-id">PN000749</div>
+                  <div class="project-title">Internal Project</div>
+                  <div class="project-link" style="display: none">
+                    <a href="#" class="view-details">View details ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasks Section -->
+          <div class="tasks-section">
+            <h1 class="section-title">Tasks</h1>
+            <div class="task-tabs">
+              <button class="task-tab active">To Do</button>
+              <button class="task-tab">In Progress</button>
+              <button class="task-tab">In Review</button>
+              <button class="task-tab">Done</button>
+            </div>
+
+            <div class="active-tasks">
+              <h3 class="tasks-subtitle">Active Tasks</h3>
+              <div class="tasks-grid">
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001245</div>
+                  <div class="task-title">UX sketches</div>
+                  <div class="task-footer">
+                    <span class="task-time">4d</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001246</div>
+                  <div class="task-title">Mind Map</div>
+                  <div class="task-footer">
+                    <span class="task-time">2d 4h</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001247</div>
+                  <div class="task-title">Research reports</div>
+                  <div class="task-footer">
+                    <span class="task-time">2d</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001248</div>
+                  <div class="task-title">Research</div>
+                  <div class="task-footer">
+                    <span class="task-time">1d 6h</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001249</div>
+                  <div class="task-title">UX Login + Registration</div>
+                  <div class="task-footer">
+                    <span class="task-time">6h</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001250</div>
+                  <div class="task-title">
+                    UI Login + Registration [other screens]
+                  </div>
+                  <div class="task-footer">
+                    <span class="task-time">1d</span>
+                    <i class="fas fa-arrow-up status-arrow up"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="backlog-tasks">
+              <h3 class="tasks-subtitle">Backlog</h3>
+              <div class="tasks-grid">
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001251</div>
+                  <div class="task-title">Animation for buttons</div>
+                  <div class="task-footer">
+                    <span class="task-time">3d</span>
+                    <i class="fas fa-arrow-down status-arrow down"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001252</div>
+                  <div class="task-title">Preloader</div>
+                  <div class="task-footer">
+                    <span class="task-time">1d</span>
+                    <i class="fas fa-arrow-down status-arrow down"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+                <div class="task-card" draggable="true">
+                  <div class="task-id">TS0001253</div>
+                  <div class="task-title">Animation for Landing page</div>
+                  <div class="task-footer">
+                    <span class="task-time">4d</span>
+                    <i class="fas fa-arrow-down status-arrow down"></i>
+                    <img
+                      class="user-avatar-small"
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt="Assignee"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+</html>

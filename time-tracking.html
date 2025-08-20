@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking - Medical App</title>
+    <link rel="stylesheet" href="time-tracking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Vacations</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Employees</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Messenger</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Info Portal</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="header">
+                <div class="header-left">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <div class="profile-dropdown">
+                        <button class="profile-btn">
+                            <div class="avatar">EY</div>
+                            <span>Evan Yates</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <button class="add-task-btn">
+                        <i class="fas fa-plus"></i>
+                        Add Task
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-wrapper">
+                <!-- Main Project Panel -->
+                <section class="project-panel">
+                    <div class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>← Back to Projects</span>
+                    </div>
+                    <h1 class="project-title">Medical App</h1>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="label">Project Number:</span>
+                            <span class="value">PN0001245</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Description:</span>
+                            <p class="description">App for maintaining medical record, making appointments with a storing prescriptions.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Reporter:</span>
+                            <div class="user-info">
+                                <div class="avatar">EY</div>
+                                <span>Evan Yates</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Assignees:</span>
+                            <div class="assignees">
+                                <div class="avatar">JS</div>
+                                <div class="avatar">MS</div>
+                                <div class="avatar">RK</div>
+                                <div class="more-badge">+2</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Priority:</span>
+                            <span class="priority">
+                                <i class="fas fa-arrow-up"></i>
+                                Medium
+                            </span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Dead Line:</span>
+                            <span class="value">Feb 23, 2020</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Created:</span>
+                            <span class="value">May 28, 2020</span>
+                        </div>
+                    </div>
+                    <div class="project-attachments">
+                        <i class="fas fa-link"></i>
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                </section>
+
+                <!-- Time Tracking Modal -->
+                <div class="modal-overlay" id="timeTrackingModal">
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h2>Time Tracking</h2>
+                            <button class="close-btn" id="closeModal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-content">
+                            <div class="logged-time-display">
+                                <div class="time-progress">
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36">
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="60, 100"/>
+                                        </svg>
+                                    </div>
+                                    <div class="time-info">
+                                        <div class="logged-time">1d 3h 25m logged</div>
+                                        <div class="original-estimate">Original Estimate 3d 8h</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="time-form">
+                                <div class="form-group">
+                                    <label for="timeSpent">Time spent:</label>
+                                    <input type="text" id="timeSpent" value="1w 4d 6h 40m">
+                                </div>
+                                <div class="form-group">
+                                    <label for="datePicker">Date:</label>
+                                    <div class="input-with-icon">
+                                        <input type="text" id="datePicker" value="Dec 20, 2020">
+                                        <i class="fas fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timePicker">Time:</label>
+                                    <div class="input-with-icon">
+                                        <input type="text" id="timePicker" value="2:00 PM">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="workDescription">Work Description:</label>
+                                    <textarea id="workDescription" placeholder="Add some description of the task"></textarea>
+                                </div>
+                                <button type="submit" class="save-task-btn">Save Task</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel -->
+                <aside class="right-panel">
+                    <div class="task-info-section">
+                        <h3>Task Info</h3>
+                        <div class="info-item">
+                            <span class="label">Reporter:</span>
+                            <div class="user-info">
+                                <div class="avatar">EY</div>
+                                <span>Evan Yates</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Assigned:</span>
+                            <span class="value">Blake Silva</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Priority:</span>
+                            <span class="priority">
+                                <i class="fas fa-arrow-up"></i>
+                                Medium
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="time-tracking-card">
+                        <h3>Time tracking</h3>
+                        <div class="time-progress">
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="60, 100"/>
+                                </svg>
+                            </div>
+                            <div class="time-info">
+                                <div class="logged-time">1d 3h 25m logged</div>
+                                <div class="original-estimate">Original Estimate 3d 8h</div>
+                            </div>
+                        </div>
+                        <button class="log-time-btn" id="openModal">
+                            <i class="fas fa-clock"></i>
+                            Log time
+                        </button>
+                    </div>
+                    
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <span class="label">Dead Line:</span>
+                            <span class="value">Feb 23, 2020</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Created:</span>
+                            <span class="value">May 28, 2020</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <script src="time-tracking.js"></script>
+</body>
+</html> 

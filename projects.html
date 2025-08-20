@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | CRM</title>
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-bg">
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">CRM</div>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="14" height="9" rx="2"/><path d="M2 11l9-7 9 7"/></svg></span>Dashboard</a></li>
+        <li class="active"><a href="projects.html"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M3 7l3-3h6l3 3"/></svg></span>Projects</a></li>
+        <li><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="16" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg></span>Calendar</a></li>
+        <li><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="11" cy="17" rx="6" ry="2"/><path d="M11 17V7M11 7C8 7 7 4 11 4c4 0 3 3 0 3z"/></svg></span>Leads</a></li>
+        <li><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M3 20c0-4 8-4 8-4s8 0 8 4"/></svg></span>Employees</a></li>
+        <li><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="16" height="12" rx="4"/><path d="M7 15v4l4-4h4"/></svg></span>Messenger</a></li>
+        <li><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="10"/><path d="M11 15v-4M11 7h.01"/></svg></span>Info Portal</a></li>
+      </ul>
+      <div class="sidebar-logout"><a href="#"><span class="icon"><svg width="22" height="22" fill="none" stroke="#B1A8D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="16" rx="2"/><path d="M16 21v-2M8 11h.01"/></svg></span>Logout</a></div>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- <div class="dashboard-glass glass-effect"> -->
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="top-bar-right">
+            <button class="icon-btn notification-btn" aria-label="Notifications">
+              <svg width="24" height="24" fill="none" stroke="#6c63a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </button>
+            <div class="profile-dropdown">
+              <span class="profile-avatar" style="background-image:url('https://randomuser.me/api/portraits/men/32.jpg')"></span>
+              <span class="profile-name">Evan Yates</span>
+              
+              <button class="icon-btn dropdown-btn" aria-label="Profile dropdown">
+                <svg width="18" height="18" fill="none" stroke="#6c63a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects + Tasks Layout -->
+        <div class="projects-main-layout">
+          <!-- Current Projects Panel -->
+          <section class="current-projects glass-effect">
+            <div class="panel-header">
+              <span>Current Projects</span>
+              <button class="panel-dropdown-btn" aria-label="Expand">
+                <svg width="18" height="18" fill="none" stroke="#6c63a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+            </div>
+            <ul class="project-list">
+              <li class="project-item active">
+  <div class="project-code">PN0001245</div>
+  <div class="project-title"><a href="../medical-ios.html" style="color:inherit;text-decoration:none;">Medical App (iOS native)</a></div>
+  <div class="project-details-hover ">
+    <a href="../medical-ios.html" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+              <li class="project-item">
+  <div class="project-code">PN0001246</div>
+  <div class="project-title">Food Delivery Service</div>
+  <div class="project-details-hover">
+    <a href="#" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+              <li class="project-item">
+  <div class="project-code">PN0001247</div>
+  <div class="project-title">Fortune website</div>
+  <div class="project-details-hover">
+    <a href="#" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+              <li class="project-item">
+  <div class="project-code">PN0001248</div>
+  <div class="project-title">Planner App</div>
+  <div class="project-details-hover">
+    <a href="#" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+              <li class="project-item">
+  <div class="project-code">PN0001249</div>
+  <div class="project-title">Time tracker - personal account</div>
+  <div class="project-details-hover">
+    <a href="#" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+              <li class="project-item">
+  <div class="project-code">PN0001250</div>
+  <div class="project-title">Internal Project</div>
+  <div class="project-details-hover">
+    <a href="#" class="project-details-link">View details <svg width="14" height="14" fill="none" stroke="#4B8CFF" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</li>
+            </ul>
+          </section>
+          <!-- Tasks Section -->
+          <section class="tasks-panel">
+            <div class="tasks-header-row">
+  <h1 class="tasks-title">Tasks</h1>
+  <div class="header-actions">
+    <button class="add-project-btn"><svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><circle cx="10" cy="10" r="9"/><path d="M10 6v8M6 10h8"/></svg> Add Project</button>
+    <button class="filter-btn" aria-label="Filter">
+      <svg width="22" height="22" fill="none" stroke="#6c63a6" stroke-width="2"><circle cx="11" cy="11" r="10"/><path d="M4 8h14M7 12h10M10 16h4"/></svg>
+    </button>
+  </div>
+</div>
+            <div class="tasks-section">
+  <div class="active-tasks-section">
+    <div class="tasks-table glass-effect">
+      <div class="tasks-table-header">Active Tasks</div>
+      <div class="tasks-table-header-row">
+        <div>Task Name</div>
+        <div>Estimate</div>
+        <div>Spent Time</div>
+        <div>Assignee</div>
+        <div>Priority</div>
+        <div>Status</div>
+      </div>
+      <div class="tasks-table-rows">
+        <div class="tasks-table-row">
+          <div class="task-name">Research</div>
+          <div class="task-estimate">2d 4h</div>
+          <div class="task-spent">1d 2h</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/1.jpg" alt=""></div>
+          <div class="task-priority medium"><svg width="16" height="16" fill="none" stroke="#ffb84b" stroke-width="2"><path d="M8 12V4M8 4l-4 4m4-4l4 4"/></svg> Medium</div>
+          <div class="task-status done">Done</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">Mind Map</div>
+          <div class="task-estimate">1d 2h</div>
+          <div class="task-spent">4h 25m</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/2.jpg" alt=""></div>
+          <div class="task-priority medium"><svg width="16" height="16" fill="none" stroke="#ffb84b" stroke-width="2"><path d="M8 12V4M8 4l-4 4m4-4l4 4"/></svg> Medium</div>
+          <div class="task-status in-progress">In Progress</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">UX sketches</div>
+          <div class="task-estimate">4d</div>
+          <div class="task-spent">2d 2h 20m</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/3.jpg" alt=""></div>
+          <div class="task-priority low"><svg width="16" height="16" fill="none" stroke="#4bb87b" stroke-width="2"><path d="M8 4v8M8 12l-4-4m4 4l4-4"/></svg> Low</div>
+          <div class="task-status in-progress">In Progress</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">UX Login + Registration</div>
+          <div class="task-estimate">2d</div>
+          <div class="task-spent">3h 15m</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/4.jpg" alt=""></div>
+          <div class="task-priority low"><svg width="16" height="16" fill="none" stroke="#4bb87b" stroke-width="2"><path d="M8 4v8M8 12l-4-4m4 4l4-4"/></svg> Low</div>
+          <div class="task-status to-do">To Do</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">UI Login + Registration</div>
+          <div class="task-estimate">1d 2h</div>
+          <div class="task-spent">4h</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/5.jpg" alt=""></div>
+          <div class="task-priority medium"><svg width="16" height="16" fill="none" stroke="#ffb84b" stroke-width="2"><path d="M8 12V4M8 4l-4 4m4-4l4 4"/></svg> Medium</div>
+          <div class="task-status in-review">In Review</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">UI for other screens</div>
+          <div class="task-estimate">4d</div>
+          <div class="task-spent">2d 2h 20m</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/6.jpg" alt=""></div>
+          <div class="task-priority low"><svg width="16" height="16" fill="none" stroke="#4bb87b" stroke-width="2"><path d="M8 4v8M8 12l-4-4m4 4l4-4"/></svg> Low</div>
+          <div class="task-status in-progress">In Progress</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="backlog-section">
+    <div class="tasks-table glass-effect">
+      <div class="tasks-table-header">Backlog</div>
+      <div class="tasks-table-header-row">
+        <div>Task Name</div>
+        <div>Estimate</div>
+        <div>Spent Time</div>
+        <div>Assignee</div>
+        <div>Priority</div>
+        <div>Status</div>
+      </div>
+      <div class="tasks-table-rows">
+        <div class="tasks-table-row">
+          <div class="task-name">Animation for buttons</div>
+          <div class="task-estimate">6h</div>
+          <div class="task-spent">0h</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/7.jpg" alt=""></div>
+          <div class="task-priority medium"><svg width="16" height="16" fill="none" stroke="#ffb84b" stroke-width="2"><path d="M8 12V4M8 4l-4 4m4-4l4 4"/></svg> Medium</div>
+          <div class="task-status to-do">To Do</div>
+        </div>
+        <div class="tasks-table-row">
+          <div class="task-name">Preloader</div>
+          <div class="task-estimate">2h</div>
+          <div class="task-spent">0h</div>
+          <div class="task-assignee"><img src="https://randomuser.me/api/portraits/men/8.jpg" alt=""></div>
+          <div class="task-priority medium"><svg width="16" height="16" fill="none" stroke="#ffb84b" stroke-width="2"><path d="M8 12V4M8 4l-4 4m4-4l4 4"/></svg> Medium</div>
+          <div class="task-status to-do">To Do</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="projects.js"></script>
+</body>
+</html>
